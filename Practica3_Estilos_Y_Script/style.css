@@ -1,0 +1,123 @@
+body {
+  font-family: 'Bebas Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: white;
+  background-image: url('img3/fbase.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-image 1.5s ease-in-out, background-color 1.5s ease-in-out;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 8px;
+  font-size: 1.8em;
+  letter-spacing: 2px;
+  text-shadow: 0 0 15px #6f00ff;
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contenedor-principal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  margin-top: 40px; 
+}
+#personaje {
+  width: auto;
+  height: 640px; 
+  max-width: 85%;
+  transition: all 1s ease;
+  filter: drop-shadow(0 0 40px rgba(140, 0, 255, 0.8));
+  border-radius: 15px;
+  object-fit: contain;
+   margin-top: -50px;
+}
+
+.botones {
+  position: relative;
+  bottom: -100px; 
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  z-index: 5; 
+}
+.botones button {
+  background: rgba(0, 0, 0, 0.7);
+  border: 2px solid #6f00ff;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 5px;
+}
+
+.botones button:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 20px #a64dff;
+}
+
+.botones img {
+  width: 85px;
+  height: 85px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+#btn-regresar {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  font-size: 1.5em;
+  background: rgba(0, 0, 0, 0.7);
+  border: 2px solid #6f00ff;
+  border-radius: 50%;
+  color: white;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.3s ease;
+}
+
+#btn-regresar:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 15px #a64dff;
+}
+
+footer {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  font-size: 1.1em;
+  letter-spacing: 1px;
+}
+
+body.beru {
+  background-image: url('img3/fondoberu2.png');
+}
+
+body.igris {
+  background-image: url('img3/fondoigris.png');
+}
+
+body.bellion {
+  background-image: url('img3/fondobellion.png');
+}
+
+body.monarch {
+  background-image: url('img3/fondomonarca.png');
+}
